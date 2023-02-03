@@ -1,132 +1,158 @@
 from time import sleep
-enigma1 = 333666
-enigma2 = 'gigante de taparacá' # 19°56’56.88″S, 69°38’1.87″W.
-enigma3 = 'bicho préguiça'
+import playsound
+enigma1 = '333666'
+resposta1 = []
+enigma2 = 'gigante de taparaca'
+resposta2 = []
+enigma3 = 'préguiça'
+resposta3 = []
 enigma4 = 'banguela'
-enigma5 = 4257040
-#tela inicial
-print('💝🦥'*34)
+resposta4 = []
+enigma5 = '4257040'
+resposta5 = []
+data1 = '290322'
+data = []
+musica = 'careless-whisper.mp3'
 
-print('Bem-vinda ao {}CAÇA DO AMOR{}, amorzinho.'.format('\33[31m','\33[m'))
-data = float(input('Digite a data mais importante do universo para continuar e, poder ganhar {}recompensas incríveis{}: '.format('\33[4;33m','\33[m'))) # 'digita a senha do programa'
-sleep(1) # tempo de espera
-if data == 29.03 or data == 2903 or data == 290322:
+print('🦥💝'*34)
 
-    print('Parabéns, a data do {}nosso amor, venceu!!!{}'.format('\33[;41m','\33[m'))
-else:
-    print('Como você pôde errar isso? Estou triste 😭')
-
-print(' ')
+print('Bem-vinda ao {}CAÇA DO AMOR{}, amorzinho.' . format ( '\33[31m' , '\33[m'))
+while data != data1:
+    data = str(input('Digite a data mais importante do universo para continuar e, poder ganhar {}recompensas incríveis{}: '.format('\33[31m' , '\33[m')))
+    if data == data1:
+        break
+print()
 
 sleep(1)
 
-if data == 29.03 or data == 2903 or data == 290322: # etapa dois
+print('Parabéns, a data do {}nosso amor, venceu!!!{}' . format ( '\33[;41m' , '\33[m' ))
+print()
 
-    print('{}{}{}'.format('\33[33m' , '-=-'*33 , '\33[m'))
-    print('{}ETAPA DOIS!!!{}'.format('\33[1;34m' , '\33[m'))
-    print('{}{}{}'.format('\33[33m' , '-=-'*33 , '\33[m'))
-    print('                                           {}CARREGANDO...{}'.format('\33[47m' , '\33[m'))
-    sleep(2)
-    print(' ')
-    print('Amor, você deverá, a partir de agora, resolver os enigmas das pistas para encontrar a sua recompensa.\n{}Cada mistério revelado indica o lugar em que o próximo está escondido até chegar no grande prêmio.{}'.format('\33[4;32m' , '\33[m'))
+sleep(2)
 
-    aceitaContinuar = input('Digite "OK" para continuar: ').lower().strip()
+print('{}{}{}'.format('\33[33m', '-=-'*33 , '\33[m'))
 
-if aceitaContinuar !='ok':
-       print('Você desistiu. Achei que me amava!!!💔')
-elif aceitaContinuar == 'ok':
-    sleep(1)
-    print(' ')
-    print('{} ENIGMAS {}'.format('-=-' * 15, '-=-' * 15))
-    sleep(1)
-    print(' ')
-    print('{}enigma 1:{}'.format('\33[7m', '\33[m'))
-    sleep(1)
-    print('Lar dentro lar.\nCabeça vermelha, corpo preto.\nTatuagem representando seu valor.\nQuem é propietário, não o quer. ')
+print('Amor, você deve, a partir de agora, resolver os enigmas das pistas para encontrar a sua recompensa.\n{}Cada mistério revelado indica o lugar em que o próximo está escondido até chegar no grande prêmio.{}'.format('\33[4;32m', '\33[m'))
+print()
 
-    resposta1 = int(input('Digite o código encontrado no local: '))
+print('{}{}{}{}{}'.format('\33[33m', '-=-'*15 , 'ENIGMAS' , '-=-'*16 , '\33[m'))
+print()
 
+sleep(3)
+
+print('{}ENIGMA 1{}'.format('\33[7m' , '\33[m'))
+
+print('Lar dentro do lar.\nTopo vermelho, base preta.\nTatuagem representando seu valor.\nQuem é propietário, não o quer.')
+
+while resposta1 != enigma1:
+    resposta1 = str(input('Digite o código encontrado no local: '))
     if resposta1 == enigma1:
-        print('{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.'.format('\33[4;36m', '\33[m'))
-        sleep(1)
+        break
+print()
+print ( '{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.' . format ( '\33[4;36m' , '\33[m' ))
+sleep(1)
 
-        print('PROCESSANDO...'.format('\33[47m', '\33[m'))
+print('{}PROCESSANDO...{}'.format('\33[37m' , '\33[m'))
+print()
 
-        sleep(2)
+sleep(2)
 
-        print(' ')
-        print('{}enigma 2:{}'.format('\33[7m', '\33[m'))
-        sleep(1)
-        print(' ')
-        sleep(1)
-        print('-.-. .- .. -..- .. -. .... .- / -.. . / -.-. --- .-. .-. . .. ---') # = caixinha de correio
-        print(' ')
+print('{}ENIGMA 2{}'.format('\33[7m' , '\33[m'))
+print()
 
-        resposta2 = str(input('Digite sua resposta aqui: ')).lower()
+sleep(1)
 
-        if resposta2 == enigma2 or resposta2 == 'gigante de taparaca':
-            print('{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.'.format('\33[4;36m', '\33[m'))
-            sleep(1)
+print('-.-. .- .. -..- .. -. .... .- / -.. . / -.-. --- .-. .-. . .. ---')
+print()
 
-            print('PROCESSANDO...'.format('\33[47m', '\33[m'))
+while resposta2 != enigma2:
+    resposta2 = (input('Digite sua resposta aqui: ')).lower().strip()
+    if resposta2 == enigma2:
+        break
+print()
+print ( '{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.' . format ( '\33[4;36m' , '\33[m' ))
+sleep(1)
 
-            sleep(2)
+print('{}PROCESSANDO...{}'.format('\33[37m' , '\33[m'))
+print()
 
-            print(' ')
-            print('{}enigma 3:{}'.format('\33[7m', '\33[m'))
-            sleep(1)
-            print(' ')
-            print('{}FOLIVORA{}'.format('\33[4;31m' , '\33[m'))
-            print(' ')
+sleep(2)
 
-            resposta3 = str(input('Digite sua resposta aqui: ')).lower()
+print('{}ENIGMA 3{}'.format('\33[7m' , '\33[m'))
+print()
 
-            if resposta3 == enigma3 or resposta3 == 'préguiça':
-                print('{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.'.format('\33[4;36m', '\33[m'))
-                print('PROCESSANDO...'.format('\33[47m', '\33[m'))
+sleep(1)
 
-                sleep(2)
+print('{}FOLIVORA{}'.format('\33[4;31m' , '\33[m'))
+print()
 
-                print(' ')
-                print('{}enigma 4:{}'.format('\33[7m', '\33[m'))
-                sleep(1)
-                print(' ')
-                print('{}A1Z26{}'.format('\33[7m' , '\33[m'))
-                print('=')
-                print('3 18 9 1 4 9 1 2 15 12 9 3 1 4 15 18 1 9 15 5 4 1 16 18 15 16 9 1 13 15 18 20 5')
+while resposta3 != enigma3:
+    resposta3 = str(input('Digite sua resposta aqui: ')).lower().strip()
+    if resposta3 == enigma3:
+        break
+print()
+print ( '{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.' . format ( '\33[4;36m' , '\33[m' ))
+print('{}PROCESSANDO...{}'.format('\33[37m' , '\33[m'))
+print()
 
-                resposta4 = str(input('Digite sua resposta aqui: ')).lower()
+sleep(2)
 
-                if resposta4 == enigma4 or resposta4 == 'furia da noite' or resposta4 == 'fúria da noite':
-                    print('{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.'.format('\33[4;36m',
-                                                                                                          '\33[m'))
-                    print('PROCESSANDO...'.format('\33[47m', '\33[m'))
+print('{}ENIGMA 4{}'.format('\33[7m' , '\33[m'))
+print()
 
-                    sleep(2)
+sleep(1)
 
-                    print(' ')
-                    print('{}enigma 5:{}'.format('\33[7m', '\33[m'))
-                    sleep(1)
-                    print(' ')
-                    print('1.Orégano\n2.Fogo\n3.Orelha\n4.Risada\n5.Navio')
+print('{}A1Z26{}'.format('\33[7m' , '\33[m'))
+print()
 
-                    resposta5 = int(input('Digite sua resposta aqui: '))
+print ( '3 18 9 1 4 9 1 2 15 12 9 3 1 4 15 18 1 9 15 5 4 1 16 18 15 16 9 1 13 15 18 20 5' )
+print()
 
-                    if resposta5 == enigma5:
-                        print(' ')
-                        print('{}{}{}'.format('\33[33m' , '-=-'*33 , '\33[m'))
-                        print(' TOPO - GUARDA - ROUPA')
-                        print('{}{}{}'.format('\33[33m' , '-=-'*33 , '\33[m'))
-                        sleep(10)
-                        print('{}PARABÉNS, AMOR.\nVOCÊ CHEGOU ATÉ O FINAL E ENCONTROU SEU PRÊMIO;\nESPERO QUE TENHA GOSTADO.'.format('\33[4;35m' , '\33[m'))
-                        sleep(3)
-                        print('{}TE AMO{}{}'.format('\33[4;31m' , '\33[m' , '🤍'))
-                        sleep(2)
-                        print(' ')
-                        print('{}FIM{}'.format('\33[47m' , '\33[m'))
-                        print(' ')
-                        print('💝🦥'*34)
+while resposta4 != enigma4:
+    resposta4 = str(input('Digite sua resposta aqui: ')).lower().strip()
+    if resposta4 == enigma4:
+        break
+print()
+print ( '{}PARABÉNS, AMOR. Você acertou{} e agora partiu para o próximo enigma.' . format ( '\33[4;36m' , '\33[m' ))
+print('{}PROCESSANDO...{}'.format('\33[37m' , '\33[m'))
+print()
 
+sleep(2)
 
+print('{}ENIGMA 5{}'.format('\33[7m' , '\33[m'))
+print()
 
+sleep(1)
 
+print('1.Orégano\n2.Fogo\n3.Orelha\n4.Risada\n5.Navio')
+print()
+
+while resposta5 != enigma5:
+    resposta5 = str(input('Digite sua resposta aqui: '))
+    if resposta5 == enigma5:
+        break
+print()
+
+print('{}{}{}'.format('\33[33m', '-=-' * 33, '\33[m'))
+
+print('TOPO-GUARDA-ROUPA')
+
+print('{}{}{}'.format('\33[33m', '-=-' * 33, '\33[m'))
+print()
+
+sleep(10)
+
+print('{}PARABÉNS, AMOR.\nVOCÊ CHEGOU ATÉ O FINAL E ENCONTROU SEU PRÊMIO;\nESPERO QUE TENHA GOSTADO.'.format('\33[4;35m', '\33[m'))
+
+sleep(3)
+
+print('{}TE AMO{}{}'.format('\33[4;31m', '\33[m', '🤍'))
+print()
+
+sleep(2)
+
+print('{}FIM{}'.format('-=-'*17 , '-=-'*17))
+
+print('🦥💝'*34)
+
+playsound.playsound(musica)
